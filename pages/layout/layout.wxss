@@ -1,0 +1,6 @@
+/* pages/layout/layout.wxss */
+.qsrow{
+  margin: 10rpx 0;
+  height: 80rpx;
+  background-color: #fff;
+}

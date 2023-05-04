@@ -1,0 +1,15 @@
+<!--components/navigation-bar/navigation-bar.wxml-->
+<view class="qs-class navigation-bar">
+  <view class="header" style="height: {{headHeight}}px;background: {{background}};">
+    <view class="header-box" style="top: {{MenuButtonInfo.top}}px;height: {{MenuButtonInfo.height}}px;">
+      <view class="back" wx:if="{{!notBack}}" catchtap="backcs">
+        <view class="icon" style="border-color: {{color}};"></view>
+      </view>
+      <view class="text" style="line-height: {{MenuButtonInfo.height}}px;font-size: {{size}};color: {{color}};">
+        {{pageName}}
+      </view>
+      <view></view>
+    </view>
+  </view>
+  <view wx:if="{{placeholder}}" style="height: {{headHeight}}px;"></view>
+</view>

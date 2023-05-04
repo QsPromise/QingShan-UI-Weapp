@@ -1,0 +1,2 @@
+<!--components/col/col.wxml-->
+<view class="qs-class qs-col {{ span ? 'qs-col-span-' + span : '' }} {{ offset ? 'qs-col-offset-' + offset : '' }}"><slot></slot></view>

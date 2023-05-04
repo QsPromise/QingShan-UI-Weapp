@@ -1,0 +1,2 @@
+<!--components/icon/icon.wxml-->
+<view class="qs-class qs-icon {{name===''?'':'qs-icon-'+ name}} {{custom}}" style="font-size:{{size}}rpx;color:{{color}}"></view>

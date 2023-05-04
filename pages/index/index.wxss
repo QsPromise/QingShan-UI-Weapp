@@ -1,0 +1,22 @@
+/**index.wxss**/
+page{
+  background-color: #f0f0f0;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.title{
+  margin: 20rpx;
+}

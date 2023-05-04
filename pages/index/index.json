@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "qs-nav": "/components/navigation-bar/navigation-bar",
+    "qs-button": "/components/button/button",
+    "qs-text": "/components/text/text",
+    "qs-list": "/components/list/list",
+    "qs-cell": "/components/cell/cell"
+  }
+}

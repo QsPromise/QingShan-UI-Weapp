@@ -1,0 +1,2 @@
+<!--components/row/row.wxml-->
+<view class="qs-class qs-row"><slot></slot></view>

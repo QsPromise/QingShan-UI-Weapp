@@ -1,0 +1,2 @@
+<!--components/text/text.wxml-->
+<text class="qs-class qs-text {{price?'qs-text-price':''}} {{gradient?'qs-text-gradient':''}}" style="color: {{color}}; background-image: {{gradient}};">{{text}}</text>

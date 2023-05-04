@@ -1,0 +1,2 @@
+/* components/text/text.wxss */
+.qs-text-price::before{content: "￥";}.qs-text-gradient{-webkit-background-clip: text;background-clip: text;}

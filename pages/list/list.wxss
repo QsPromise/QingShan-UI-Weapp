@@ -1,0 +1,4 @@
+/* pages/list/list.wxss */
+.h6{
+  margin: 10rpx;
+}

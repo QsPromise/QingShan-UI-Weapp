@@ -1,0 +1,31 @@
+/* components/navigation-bar/navigation-bar.wxss */
+.header{
+  width: 100%;
+  height: 96rpx;
+  position: fixed;
+  top: 0;left: 0;
+  z-index: 99;
+  background: transparent;
+}
+.header-box{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.back{
+  padding: 30rpx;
+}
+.back>.icon{
+  width: 20rpx;
+  height: 20rpx;
+  border:solid #000;
+  border-width: 0 0 3rpx 3rpx;
+  transform: rotate(45deg);
+}

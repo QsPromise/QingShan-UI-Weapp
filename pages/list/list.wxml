@@ -1,0 +1,34 @@
+<!--pages/list/list.wxml-->
+<qs-nav pageName="List 列表" background="#f0f0f0"></qs-nav>
+<view class="page">
+  <view class="h6">
+  单行列表 基础用法
+  </view>
+  <qs-cell title="标题"></qs-cell>
+  <qs-cell title="标题" value="详细内容"></qs-cell>
+  <qs-cell title="标题" value="只显示箭头" is-link></qs-cell>
+  <qs-cell title="标题" value="点击可以跳转" is-link url="/pages/index/index"></qs-cell>
+  <qs-cell title="标题" value="详细内容" label="描述" is-link ></qs-cell>
+  <view class="h6">
+  单行列表 高级用法（列表组同理）
+  </view>
+  <qs-cell title="标题" value="带有icon" is-link >
+    <qs-icon slot="icon" name="heart"/>
+  </qs-cell>
+  <qs-cell title="标题" label="描述" value="插入额外内容" is-link >
+    <qs-icon  name="heart"/>
+  </qs-cell>
+  <qs-cell title="开关">
+    <qs-icon  slot="footer" name="heart"/>
+  </qs-cell>
+</view>
+<view class="h6">
+  列表组 高级用法（列表组同理）
+  </view>
+<qs-list>
+  <qs-cell title="标题"></qs-cell>
+  <qs-cell title="标题" value="详细内容"></qs-cell>
+  <qs-cell title="标题" value="只显示箭头" is-link></qs-cell>
+  <qs-cell title="标题" value="点击可以跳转" is-link url="/pages/index/index"></qs-cell>
+  <qs-cell title="标题" value="详细内容" label="描述" is-link ></qs-cell>
+</qs-list>

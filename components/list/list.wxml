@@ -1,0 +1,4 @@
+<!--components/list/list.wxml-->
+<view class="qs-class qs-list">
+  <slot></slot>
+</view>

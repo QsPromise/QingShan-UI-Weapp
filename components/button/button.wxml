@@ -1,0 +1,8 @@
+<!--components/button/button.wxml-->
+<button class="qs-class qs-btn {{plain?'qs-btn-plain':''}}  {{link?'qs-btn-link':''}} {{ long ? 'qs-btn-long' : '' }} {{ 'qs-btn-' + size }} {{ 'qs-btn-' + type }} {{ 'qs-btn-' + shape }} {{ loading ? 'qs-btn-loading' : '' }} {{ disabled ? 'qs-btn-disabled' : ''}} {{ inline ? 'qs-btn-inline' : '' }}" hover-class="qs-btn-hover" bindtap="handleTap" open-type="{{ openType }}" form-type="{{ formType }}" app-parameter="{{ appParameter }}" hover-stop-propagation="{{ hoverStopPropagation }}" hover-start-time="{{ hoverStartTime }}" hover-stay-time="{{ hoverStayTime }}" session-from="{{ sessionFrom }}" send-message-title="{{ sendMessageTitle }}" send-message-path="{{ sendMessagePath }}" send-message-img="{{ sendMessageImg }}" show-message-card="{{ showMessageCard }}" bindcontact="bindcontact" bindgetuserinfo="bindgetuserinfo" bindgetphonenumber="bindgetphonenumber" bindgetphonenumber="bindgetphonenumber" bindchooseavatar="bindchooseavatar" binderror="binderror" disabled="{{disabled}}">
+  <view class="qs-btn-loading-inner" wx:if="{{loading&&!link}}"></view>
+  <view wx:if="{{text}}">
+    {{text}}
+  </view>
+  <slot wx:else></slot>
+</button>

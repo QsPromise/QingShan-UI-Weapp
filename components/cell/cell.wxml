@@ -1,0 +1,17 @@
+<!--components/cell/cell.wxml-->
+<view bindtap="handleTap" class="qs-class qs-cell {{ isLastCell ? 'qs-cell-last' : '' }} {{ isLink ? 'qs-cell-access' : '' }}">
+  <view class="qs-cell-icon">
+    <slot name="icon"></slot>
+  </view>
+  <view class="qs-cell-bd">
+    <view wx:if="{{ title }}" class="qs-cell-text">{{ title }}</view>
+    <view wx:if="{{ label }}" class="qs-cell-desc">{{ label }}</view>
+    <slot></slot>
+  </view>
+  <view catchtap="navigateTo" class="qs-cell-ft">
+    <block wx:if="{{value}}">{{ value }}</block>
+    <block wx:else>
+      <slot name="footer"></slot>
+    </block>
+  </view>
+</view>

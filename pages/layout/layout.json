@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "qs-nav": "/components/navigation-bar/navigation-bar",
+    "qs-icon": "/components/icon/icon",
+    "qs-row": "/components/row/row",
+    "qs-col": "/components/col/col"
+  }
+}

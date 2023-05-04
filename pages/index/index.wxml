@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<qs-nav pageName="QingShan UI" not-back></qs-nav>
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar" bindtap="bindViewTap">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view> QingShan UI </view>
+  </view>
+</view>
+<block wx:for="{{list}}" wx:key="index">
+  <view class="title"> {{item.name}} </view>
+  <qs-list>
+    <qs-cell wx:for="{{item.list}}" wx:key="idx" wx:for-item="itm" wx:for-index="idx" title="{{itm.litle}}" is-link url="{{itm.url}}"></qs-cell>
+    <qs-cell></qs-cell>
+  </qs-list>
+</block>
