@@ -1,0 +1,8 @@
+/* components/card/card.wxss */
+.qs-card{
+  width: 700rpx;
+  height: 300rpx;
+  margin:20rpx auto;
+  border-radius: 24rpx;
+  border: 1rpx solid #333;
+}

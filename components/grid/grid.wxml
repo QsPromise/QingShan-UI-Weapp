@@ -1,0 +1,17 @@
+<!--components/grid/grid.wxml-->
+<view class="qs-class qs-grid" style="{{size?'width: '+size+';height:' +size+';':''}} grid-template-columns:{{'repeat('+row+', 1fr)'}}; grid-template-rows:{{'repeat('+row+', 1fr)'}};gap:{{gap}}">
+<block wx:if="{{col*1!==0}}">
+  <block wx:for="{{row*col}}" wx:key="index">
+  <view class="qs-grid-item {{index<row?'qs-grid-item-top':''}} {{(index+1)%row===0?'qs-grid-item-right':''}} {{gap!='0rpx'?'qs-grid-item-gap':''}}">
+  <slot name="grid-{{index+1}}"></slot>
+  </view>
+</block>
+</block>
+<block wx:else>
+  <block wx:for="{{row*row}}" wx:key="index">
+  <view class="qs-grid-item {{index<row?'qs-grid-item-top':''}} {{(index+1)%row===0?'qs-grid-item-right':''}} {{gap!='0rpx'?'qs-grid-item-gap':''}}">
+  <slot name="grid-{{index+1}}"></slot>
+  </view>
+</block>
+</block>
+</view>

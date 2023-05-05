@@ -23,7 +23,7 @@
   </qs-cell>
 </view>
 <view class="h6">
-  列表组 高级用法（列表组同理）
+  列表组 基础用法
   </view>
 <qs-list>
   <qs-cell title="标题"></qs-cell>

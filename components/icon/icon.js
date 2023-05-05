@@ -17,8 +17,9 @@ Component({
       value: "",
     },
     size: {
-      type: Number,
-      value: 32,
+      type:String,
+      optionalTypes:[Number],
+      value: "32",
     },
     color: {
       type: String,
@@ -34,5 +35,12 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {},
+  methods: {
+    optionHandle(){
+      const {size} = this.data;
+      if(!isNaN(size)){
+        this.setData({size:size+"rpx"})
+      }
+    },
+  },
 });

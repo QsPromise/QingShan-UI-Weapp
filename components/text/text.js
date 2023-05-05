@@ -27,6 +27,11 @@ Component({
     gradient:{
       type: String,
       value: "",
+    },
+    size: {
+      type:String,
+      optionalTypes:[Number],
+      value: "32",
     }
   },
   /**
@@ -34,8 +39,25 @@ Component({
    */
   lifetimes: {
     attached() {
-      const { maskedName, text,gradient,price } = this.data;
-      console.log(maskedName, text,gradient);
+     this.optionHandle();
+    },
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {},
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+    optionHandle(){
+      const {size,maskedName, text,gradient,price} = this.data;
+      console.log(size);
+      if(!isNaN(size)){
+        this.setData({size:size+"rpx"})
+      }
       if(!gradient.includes('gradient')){
         this.setData({gradient:""})
       }else{
@@ -59,14 +81,4 @@ Component({
       }
     },
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {},
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {},
 });

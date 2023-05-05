@@ -78,8 +78,22 @@ Component({
     backcs() {
       const { autoBack } = this.data;
       if (autoBack) {
-        console.log("返回 ",autoBack);
-        wx.navigateBack();
+        const peges = getCurrentPages()
+        if(peges.length>1){
+          wx.navigateBack();
+        }else{
+          let url = `/${__wxConfig['pages'][0]}`
+          console.log(url, __wxConfig['tabBar']['list']);
+          try {
+            wx.redirectTo({
+              url,
+            })
+          } catch (error) {
+            wx.switchTab({
+              url,
+            })
+          }
+        }
       } else {
         console.log("手动返回");
         this.triggerEvent("click");

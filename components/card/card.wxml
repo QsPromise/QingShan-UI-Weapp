@@ -1,0 +1,15 @@
+<!--components/card/card.wxml-->
+<!-- 还没想好 -->
+<view class="qs-class qs-card">
+<view class="qs-card-top">
+  <view class="qs-card-title">
+    <slot name="top"></slot>
+  </view>
+</view>
+<view class="qs-card-content">
+<slot></slot>
+</view>
+<view class="qs-card-foot">
+<slot name="foot"></slot>
+</view>
+</view>

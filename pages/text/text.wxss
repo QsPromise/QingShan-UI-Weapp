@@ -1,0 +1,4 @@
+/* pages/text/text.wxss */
+.a{
+  background: linear-gradient(rgb(51, 229, 241),rgb(182, 36, 226));
+}

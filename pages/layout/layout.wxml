@@ -1,6 +1,23 @@
 <!--pages/layout/layout.wxml-->
-<qs-nav pageName="Layout 栅格布局" background="#f0f0f0"></qs-nav>
+<qs-nav pageName="Layout 栅格系统" background="#f0f0f0"></qs-nav>
 <view class="h6"> 基础用法 </view>
-<qs-row qs-class="qsrow">
-  <qs-col  qs-class="qscol" span="12"></qs-col>
-</qs-row>
+<view class="qsrow" wx:for="{{layoutList}}" wx:key="index">
+  <qs-row>
+    <block wx:for="{{item.colN}}" wx:for-item="itm" wx:key="itm">
+        <qs-col  span="{{24/item.colN}}">
+          <view class="div {{ itm % 2 ===0?'':'div-2' }} {{ item.colN >=12?'div-3': item.colN>=6 ?'suofang':'' }} "> {{24/item.colN}} {{item.colB}}% </view>
+        </qs-col>
+    </block>
+  </qs-row>
+</view>
+<view class="h6"> 偏移 </view>
+<view class="qsrow">
+  <qs-row>
+      <qs-col span="8">
+        <view class="div suofang">span=8 offset=0</view>
+      </qs-col>
+      <qs-col span="8" offset="8">
+        <view class=" div suofang">span=8 offset=8</view>
+      </qs-col>
+  </qs-row>
+</view>

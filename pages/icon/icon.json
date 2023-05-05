@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "qs-nav": "/components/navigation-bar/navigation-bar",
+    "qs-grid": "/components/grid/grid",
+    "qs-icon": "/components/icon/icon"
+  }
+}

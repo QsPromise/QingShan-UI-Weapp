@@ -1,6 +1,25 @@
 /* pages/layout/layout.wxss */
+.h6{
+  margin: 10rpx;
+}
+.div{
+  text-align: center;
+  height: 100%;
+  line-height: 80rpx;
+  background-color: #f0f;
+}
+.suofang{
+  font-size: 30rpx;
+}
+.div-2{
+  background-color: rgb(245, 132, 245);
+}
+.div-3{
+  font-size: 20rpx;
+}
+
 .qsrow{
-  margin: 10rpx 0;
   height: 80rpx;
+  margin: 10rpx 0;
   background-color: #fff;
 }

@@ -1,0 +1,8 @@
+<!--pages/card/card.wxml-->
+<qs-nav pageName="Card 卡片" background="#f0f0f0"></qs-nav>
+<view class="h6"> 基础用法 </view>
+<qs-card>
+<view class="div" slot="top">标题</view>
+<view class="div">内容</view>
+<view class="div" slot="foot">注释</view>
+</qs-card>

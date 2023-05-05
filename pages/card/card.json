@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "qs-nav": "/components/navigation-bar/navigation-bar",
+    "qs-card": "/components/card/card"
+  }
+}

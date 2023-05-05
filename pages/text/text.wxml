@@ -1,0 +1,14 @@
+<!--pages/text/text.wxml-->
+<qs-nav pageName="Text 文字" background="#f0f0f0"></qs-nav>
+<view class="h6"> 基础用法 </view>
+<qs-text text="文字"></qs-text>
+<view class="h6"> 金额 </view>
+<qs-text text="99" price></qs-text>
+<view class="h6"> 颜色 </view>
+<qs-text text="文字" color="red"></qs-text>
+<view class="h6"> 渐变 </view>
+<qs-text text="文字" gradient="linear-gradient(rgb(51, 229, 241),rgb(182, 36, 226))"></qs-text>
+<view class="h6"> 姓名脱敏 </view>
+<qs-text text="张君瑞" maskedName></qs-text>
+<view class="h6"> 文字大小 </view>
+<qs-text text="张君瑞" size="40"></qs-text>

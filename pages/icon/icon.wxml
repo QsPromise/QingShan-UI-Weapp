@@ -1,0 +1,19 @@
+<!--pages/icon/icon.wxml-->
+<qs-nav pageName="Icon 图标" background="#f0f0f0"></qs-nav>
+<view class="h6"> 基础用法 </view>
+<qs-icon></qs-icon>
+<view class="h6"> 大小 </view>
+<qs-icon size="40px"></qs-icon>
+<view class="h6"> 颜色 </view>
+<qs-icon color="red"></qs-icon>
+<view class="h6"> 所有图标 </view>
+<qs-grid qs-class="qs-class" size="90vw" row="6" col="5">
+<view class="item" wx:for="{{iconList}}" wx:key="index" slot="grid-{{index+1}}">
+  <qs-icon name="{{item}}"></qs-icon>
+  <view> {{item}} </view>
+</view>
+</qs-grid>
+<view class="h6"> 自定义图标 </view>
+<view class="tip">自定义图标玩法多样，请自行探索，此处提供两条建议</view>
+<view class="tip">1、请尽量使用iconfont以保证样式统一</view>
+<view class="tip">2、如果使用css绘制，某些参数可能不生效，请尽量不要这么玩</view>

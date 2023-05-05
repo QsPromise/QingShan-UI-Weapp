@@ -1,0 +1,21 @@
+/* components/grid/grid.wxss */
+.qs-grid{
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  margin: auto;
+}
+.qs-grid-item{
+  border: solid #333;
+  border-width: 0 0 1rpx 1rpx;
+}
+.qs-grid-item-top{
+  border-top: 1rpx solid #333;
+}
+.qs-grid-item-right{
+  border-right: 1rpx solid #333;
+}
+.qs-grid-item-gap{
+  border: 1rpx solid #333;
+
+}

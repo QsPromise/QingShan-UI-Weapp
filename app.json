@@ -1,9 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/list/list",
-    "pages/layout/layout"
+    "pages/layout/layout",
+    "pages/grid/grid",
+    "pages/card/card",
+    "pages/text/text",
+    "pages/icon/icon"
   ],
   "window": {
     "backgroundTextStyle": "light",

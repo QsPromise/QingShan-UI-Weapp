@@ -1,0 +1,18 @@
+<!--pages/grid/Grid.wxml-->
+<qs-nav pageName="Grid 宫格" background="#f0f0f0"></qs-nav>
+<view class="h6"> 基础用法 </view>
+<qs-grid></qs-grid>
+<view class="h6"> 基础限制宽度 </view>
+<qs-grid size="500"></qs-grid>
+<view class="h6"> 间隔 </view>
+<qs-grid  size="500" gap="10"></qs-grid>
+<view class="h6"> 指定行列 </view>
+<qs-grid  size="500" row="9"></qs-grid>
+<view class="h6"> 行列不同 </view>
+<qs-grid  size="500" row="9" col="8"></qs-grid>
+<view class="h6"> 插入内容 </view>
+<qs-grid  size="500" gap="10">
+  <view class="div" slot="grid-5"> 
+    <qs-icon name="heart"></qs-icon>
+  </view>
+</qs-grid>
